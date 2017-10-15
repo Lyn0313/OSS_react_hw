@@ -15,7 +15,8 @@ const App = () => {
             <Header/>
             <div className="body">
               <Switch>
-                <Route exact path="/novel" component={Novel}/>
+                <Route exact path="/" component={Novel}/>
+                <Route path="/novel" component={Novel}/>
                 <Route path="/webtoon" component={Webtoon}/>
                 <Route component={PageError}/>
               </Switch>

@@ -12,6 +12,9 @@
 .header a.item.active {
   color: lightblue;
 }
+.header h3 {
+  color: white;
+}
 
 .body {
   padding-top: 10px;
