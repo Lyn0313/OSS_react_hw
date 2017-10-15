@@ -1,21 +1,28 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import Header from './Header';
+import Novel from './Novel';
+import Webtoon from './Webtoon';
+import PageError from './PageError';
+
 import './App.css';
 
-class App extends Component {
-  render() {
+const App = () => {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+        <Router>
+          <div>
+            <Header/>
+            <div className="body">
+              <Switch>
+                <Route exact path="/novel" component={Novel}/>
+                <Route path="/webtoon" component={Webtoon}/>
+                <Route component={PageError}/>
+              </Switch>
+            </div>
+          </div>
+        </Router>
     );
-  }
-}
+};
 
 export default App;
