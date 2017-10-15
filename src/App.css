@@ -1,18 +1,47 @@
-.header{
+.header {
   background: black;
   padding: 10px;
 }
 
-.header a.item{
+.header a.item {
   margin: 10px;
   text-decoration: none;
   color: white;
 }
 
-.header a.item.active{
+.header a.item.active {
   color: lightblue;
 }
 
-.body{
+.body {
   padding-top: 10px;
+}
+
+.table {
+ margin: auto;
+  margin-top: 150px;
+}
+
+.table div {
+  background-color: #f0f0f0;
+  width: 150px;
+  height: 130px;
+  text-align: center;
+  padding: 10px;
+}
+
+
+.table div.empty {
+  background-color: inherit;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+div.Image {
+  width: 150px;
+  height: 100px;
+  padding: 0px;
 }
